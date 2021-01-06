@@ -180,6 +180,7 @@ img {
 
 .about-me-desc {
     padding: 4rem;
+    padding-bottom: 0;
 }
 
 .about-me-desc h4 {
@@ -290,6 +291,29 @@ img {
     text-align: center;
     color: #4a5568;
     font-size: 1.25rem;
+    margin-bottom: 60px;
+}
+
+#contact-me form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-full {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-container button {
+    padding: 0.5rem 1rem;
 }
 
 /* Footer */

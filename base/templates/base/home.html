@@ -164,6 +164,38 @@
         <div class="container">
             <h4>Contact Me</h4>
             <p>Send me a message if you want to discuss a project !</p>
+            <form action="" method="POST">
+            {% csrf_token %}
+                <div class="form-full">
+                    {{ contact_form.non_field_errors }}
+                    {% if contact_form.email.errors %}
+                        <ul>
+                        {% for error in contact_form.email.errors %}
+                            <li>
+                                <div class="alert alert-danger" role="alert">
+                                    {{ error|escape }}
+                                </div>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ contact_form.name }}
+                </div>
+                <div class="form-group">
+                    {{ contact_form.email }}
+                </div>
+                <div class="form-group form-full">
+                    {{ contact_form.subject }}
+                </div>
+                <div class="form-group form-full">
+                    {{ contact_form.message }}
+                </div>
+                <div class="form-full submit-container">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
         </div>
         
     </section>
