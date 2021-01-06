@@ -1,0 +1,88 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <section id="home-front" class="container">
+        <div class="profile-image">
+            <img src="{% static 'base/img/profilepic.jpg' %}">
+        </div>
+        <div class="what-i-do">
+            <div class="preview-shadow">
+                <div class="preview">
+                    <div class="cr-tl corner">
+                    </div>
+                    <div class="cr-tr corner">
+                    </div>
+                    <div class="cr-bl corner">
+                    </div>
+                    <div class="cr-br corner">
+                    </div>
+                    <h3>What I Do</h3>
+                    <p>
+                        I'm a Full Stack Web Developer. Besides Web Apps I also make Automation Scripts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-me">
+        <div class="about-me-desc container">
+            <h4>About Me</h4>
+            <p>
+                I found my passion of coding when I was In School
+                and now I'm a Developer.
+            </p>
+            <p>
+                I love learning new technologies (Frameworks, Libraries).
+                While I keep busy learning new stuffs and making projects,
+                I sometime take freelance projects than interest me.
+            </p>
+        </div>
+        <div class="skills">
+            <h5>Skills</h5>
+            <div class="skills-grid">
+                <div class="skill">
+                    <p>ReactJS</p>
+                    <div class="skill-icon">
+                        <i class="fab fa-react spec" style="color: rgb(93, 209, 247); font-size: 4rem;">
+                        </i>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>NodeJS</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>MongoDB</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Django</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Postgres SQL</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Git</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Linux</p>
+                    <div class="skill-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

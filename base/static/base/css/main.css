@@ -1,0 +1,279 @@
+/* Global */
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Uitl */
+
+.corner {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border: 1px solid #44B78B;
+}
+
+.cr-tl {
+    top: -5px;
+    left: -5px;
+}
+
+.cr-tr {
+    right: -5px;
+    top: -5px;
+}
+
+.cr-br {
+    bottom: -5px;
+    right: -5px;
+}
+
+.cr-bl {
+    bottom: -5px;
+    left: -5px;
+}
+
+/* NavBar */
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0.6rem;
+    background-color: #44B78B;
+    color: #C9F0DD;
+}
+
+.nav-header-title {
+    padding: 0;
+    font-size: 1.7rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.nav-header div {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header nav {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    align-items: center;
+}
+
+.nav-header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-header-item {
+    margin: 5%;
+    list-style: none;
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: #C9F0DD;
+    border-bottom: none;
+    border-bottom: #44B78B 2px solid;
+    transition: color 0.5s, border-bottom 0.5s;
+}
+
+.nav-header-item:hover {
+    color: white;
+    border-bottom: white 2px solid;
+}
+
+.nav-header-item-active {
+    margin: 5%;
+    list-style: none;
+    border-bottom: white 2px solid;
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 760px) {
+    .nav-header  div {
+        flex-direction: column;
+    }
+
+    .nav-header-title {
+        padding: 1.5rem;
+    }
+}
+
+/* Home Page */
+
+#home-front {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-front .profile-image {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #44B78B;
+}
+
+.preview-shadow {
+    background-color: #DBDBDB;
+    height: 200px;
+    width: 350px;
+    position: relative;
+}
+
+.preview {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    border: 1px solid #44B78B;
+    padding: 1rem;
+}
+
+.preview-shadow h3 {
+    margin: 20px 0;
+}
+
+@media (max-width:1000px) {
+    #home-front {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
+
+/* About Me */
+
+#about-me {
+    background-color: #EDF2F7;
+    margin-bottom: 20px;
+}
+
+.about-me-desc {
+    padding: 4rem;
+}
+
+.about-me-desc h4 {
+    border-top: solid 3px #44B78B;
+    width: 170px;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 1.7rem;
+}
+
+.about-me-desc p {
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h5 {
+    text-align: center;
+    font-size: 2.3rem;
+    border-bottom: solid 3px #44B78B;
+    width: 160px;
+    padding: 1.6rem;
+    margin-bottom: 50px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+.skill {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    width: 9rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #DBDBDB;
+}
+
+footer h6, footer p {
+    margin: 0;
+}
+
+footer div {
+    display: flex;
+    padding: 0.9rem;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+
+.footer-left h6 {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.footer-left p {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: gray;
+}
+
+.social-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+@media (max-width: 770px) {
+    footer div {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-left {
+        gap: 20px;
+    }
+}
