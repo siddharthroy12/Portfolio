@@ -171,6 +171,13 @@ img {
     }
 }
 
+@media (max-width: 430px) {
+    .preview-shadow, .preview {
+        width: 150px;
+        height: 300px
+    }
+}
+
 /* About Me */
 
 #about-me {
@@ -225,10 +232,17 @@ img {
     margin: 2rem auto;
 }
 
+@media (max-width: 700px) {
+    .about-me-desc h4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Featured Proejcts */
 
 #featured-projects {
-    padding: 1rem;
+    padding: 2rem 0;
 }
 
 #featured-projects h4 {
@@ -242,12 +256,12 @@ img {
     color: #4a5568;
     font-size: 1.25rem;
     padding: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 #featured-projects .row {
     max-width: 1000px;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 .project-card {
@@ -279,7 +293,7 @@ img {
 
 #contact-me {
     background-color: #edf2f7;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 #contact-me h4 {
@@ -298,7 +312,7 @@ img {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
