@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <section id="projects">
+        <div class="heading">
+            <h1 class="title">My All Projects</h1>
+            <p class="subtitle">Here are all my latest projects which I have built over the course of years.</p>
+        </div>
+        <div class="project-list container">
+            <div class="row">
+                {% for project in projects %}
+                <div class="col col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="{{ project.preview.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <h6>{{ project.tech_stack }}</h6>
+                            <p class="card-text">
+                                {{ project.desc }}
+                            </p>
+                            <a href="{{ project.github_link }}" target="_blank" class="btn btn-primary btn-sm">Github</a>
+                            <a href="{{ project.live_link }}" target="_blank" class="btn btn-primary btn-sm">Live</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock content %}

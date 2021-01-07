@@ -239,7 +239,7 @@ img {
     }
 }
 
-/* Featured Proejcts */
+/* Featured Projects */
 
 #featured-projects {
     padding: 2rem 0;
@@ -330,6 +330,21 @@ img {
     padding: 0.5rem 1rem;
 }
 
+/* Projects Page */
+
+.heading {
+    text-align: center;
+    padding: 5rem;
+}
+
+.heading .title {
+    font-size: 1.875rem;
+}
+
+.heading .subtitle {
+    color: #4a5568;
+}
+
 /* Footer */
 
 footer {
@@ -378,6 +393,11 @@ footer div {
 
 .social-links li {
     list-style: none;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black;
 }
 
 @media (max-width: 770px) {
