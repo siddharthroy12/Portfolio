@@ -31,7 +31,11 @@
                     {% else %}
                         <li class="nav-header-item"><a href="{% url 'projects' %}">Projects</a></li>
                     {% endif %}
-                    <li class="nav-header-item">Blog</li>
+                    {% if page == "blog" %}
+                        <li class="nav-header-item-active"><a href="{% url 'blog' %}">Blog</a></li>
+                    {% else %}
+                        <li class="nav-header-item"><a href="{% url 'blog' %}">Blog</a></li>
+                    {% endif %}
                     {% if page == "home" or page == None %}
                         <li class="nav-header-item"><a href="#contact-me">Contact</a></li>
                     {% else %}
