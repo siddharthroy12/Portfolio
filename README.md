@@ -18,6 +18,7 @@ DEBUG=True # Set it to false for production
 
 - `git clone https://github.com/siddharthroy12/Portfolio`
 - `pipenv install`
+- `pipenv shell`
 - `touch .env # Fill it with the Evironment Variables`
 - `python3 manage.py createsuperuser`
 - `python3 manage.py migrate`
