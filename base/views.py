@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from .forms import ContactForm
 from portfolio import settings
+from projects.models import Project
 
 def home(request):
     form = ContactForm()
@@ -33,7 +34,8 @@ def home(request):
         form = ContactForm()
 
     context = {
-        "contact_form": form
+        "contact_form": form,
+        'featured_projects': Project.objects.filter(featured=True)
     }
 
     return render(request, 'base/home.html', context)

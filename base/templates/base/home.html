@@ -44,8 +44,7 @@
                     <div class="skill">
                         <p>ReactJS</p>
                         <div class="skill-icon">
-                            <i class="fab fa-react spec" style="color: rgb(93, 209, 247); font-size: 4rem;">
-                            </i>
+                            <i class="fab fa-react spec" style="color: rgb(93, 209, 247); font-size: 4rem;"></i>
                         </div>
                     </div>
                 </div>
@@ -69,7 +68,7 @@
                     <div class="skill">
                         <p>Python</p>
                         <div class="skill-icon">
-                            <i class="fab fa-python" style="color: #F7CA3E; font-size: 4rem;"></i>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" style="height:70px;object-fit:contain">
                         </div>
                     </div>
                 </div>
@@ -112,52 +111,22 @@
         <h4>Featured Projects</h4>
         <p>Here are my some of best projects</p>
         <div class="row">
-            <div class="col col-lg-4 col-md-6">
-                <div class="card project-card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/siddharthroy12/projects-list/master/img/blog.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Blogging App</h5>
-                        <h6>Bootstrap, Flask, Python, Postgresql</h6>
-                        <p class="card-text">
-                            A simple Mini Blog I made using python and flask.
-                            It features an advance editor for posts to create and update.
-                            Users can like and review post. It also has forgot password feature.
-                        </p>
-                        <a href="#" class="btn btn-primary btn-sm">Github</a>
-                        <a href="#" class="btn btn-primary btn-sm">Live</a>
+            {% for project in featured_projects %}
+                <div class="col col-lg-4 col-md-6">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="{{ project.preview.url }}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <h6>{{ project.tech_stack }}</h6>
+                            <p class="card-text">
+                                {{ project.desc }}
+                            </p>
+                            <a href="{{ project.github_link }}" target="_blank" class="btn btn-primary btn-sm">Github</a>
+                            <a href="{{ project.live_link }}" target="_blank" class="btn btn-primary btn-sm">Live</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col col-lg-4 col-md-6">
-                <div class="card project-card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/siddharthroy12/insta-clone/main/frontend/public/img/screenshot.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Social Media App</h5>
-                        <h6>NodeJS, Express, ReactJS, MongoDB</h6>
-                        <p class="card-text">
-                            A fully functional Social Media App with authentication,
-                            authorization, likes, comments, image upload, profile page and admin control.
-                        </p>
-                        <a href="#" class="btn btn-primary btn-sm">Github</a>
-                        <a href="#" class="btn btn-primary btn-sm">Live</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-lg-4 col-md-6">
-                <div class="card project-card">
-                    <img class="card-img-top" src="https://github.com/siddharthroy12/Shoptify/raw/main/uploads/screenshot.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Ecommerce Website</h5>
-                        <h6>NodeJS, Express, ReactJS, MongoDB</h6>
-                        <p class="card-text">
-                           A fully functional eCommerce website with login,
-                           authentication, admin page and PayPal payment.
-                        </p>
-                        <a href="#" class="btn btn-primary btn-sm">Github</a>
-                        <a href="#" class="btn btn-primary btn-sm">Live</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
     <section id="contact-me">
