@@ -150,8 +150,8 @@ img {
 
 .preview {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 20px;
+    left: 20px;
     height: 200px;
     width: 350px;
     background-color: white;
@@ -334,7 +334,7 @@ img {
 
 .heading {
     text-align: center;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 .heading .title {
@@ -410,5 +410,12 @@ footer div {
 
     .footer-left {
         gap: 20px;
+    }
+}
+
+@media (max-width: 325px) {
+    .footer-left p {
+        display: flex;
+        flex-direction: column;
     }
 }
