@@ -348,16 +348,17 @@ img {
 
 #blogs {
     padding: 1rem 0;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
+    min-height: 80vh;
 }
 
 .blog-container {
     display: flex;
-    margin: 5rem auto;
+    margin: 2rem auto;
     max-width: 1000px;
 }
 
-.blog-thumbnail {
+.blog-thumbnail img {
     width: 300px;
     padding: 1rem;
 }
@@ -397,6 +398,8 @@ img {
 
 .post-content table {
     display: block;
+    font-size: 1rem;
+    overflow-x:auto;
 }
 
 .post-content img {
@@ -414,17 +417,28 @@ img {
     text-align: center;
 }
 
+.page-nav {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 @media (max-width: 800px) {
     .blog-container {
         flex-direction: column;
     }
 
-    .blog-thumbnail {
+    .blog-thumbnail img {
         width: 100%;
     }
 
     .blog-title {
         font-size: 1.3rem;
+    }
+
+    .post-content {
+        font-size: 1rem;
     }
 }
 

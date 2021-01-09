@@ -14,6 +14,19 @@
                 </div>
             </div>
             {% endfor %}
+            <div class="page-nav">
+                {% if has_prev %}
+                    <a class="btn btn-secondary btn-sm" href={% url 'blogs' %}?page={{ page_num|add:"-1" }}>Prev</a>
+                {% else %}
+                    <a class="btn btn-secondary btn-sm disabled">Prev</a>
+                {% endif %}
+                    <a>({{ page_num }}/{{ pages }})</a>
+                {% if has_next %}
+                    <a class="btn btn-secondary btn-sm" href={% url 'blogs' %}?page={{ page_num|add:"1" }}>Next</a>
+                {% else %}
+                    <a class="btn btn-secondary btn-sm disabled">Next</a>
+                {% endif %}
+            </div>
         {% else %}
             <h1 class="no-posts">No Posts :(</h1>
             <p class="no-posts-msg">I will upload soon (Maybe)</p>
