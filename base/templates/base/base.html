@@ -3,7 +3,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% if description %}
+        <meta name="description" content="{{ description }}">
+    {% else %}
+        <meta name="description" content="I make websites and automation scripts.">
+    {% endif %}
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'base/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'base/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'base/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'base//site.webmanifest' %%}">
     <!-- Load CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />

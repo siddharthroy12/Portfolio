@@ -10,6 +10,8 @@ def blogs_view(request):
     page = paginator.get_page(page_number)
 
     context = {
+        'title': 'Siddharth Roy | Blog',
+        'description': 'Welcome to my blog',
         'page': 'blog',
         'page_num': page.start_index(),
         'blogs': page,
@@ -25,6 +27,8 @@ def blog_view(request, id):
     blog = Blog.objects.get(pk=id)
 
     context =  {
+        'description': blog.title,
+        'title': blog.title,
         'page': 'blog',
         'blog': blog
     }
