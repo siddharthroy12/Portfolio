@@ -3,7 +3,7 @@ from django.core.paginator import Paginator
 from .models import Blog
 
 def blogs_view(request):
-    blogs = Blog.objects.all()
+    blogs = Blog.objects.all().order_by('-uploaded_at')
     paginator = Paginator(blogs, 5)
     page_number = request.GET.get('page') if request.GET.get('page') else 1
 
