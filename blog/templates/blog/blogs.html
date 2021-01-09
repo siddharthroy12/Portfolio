@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <section id="blogs" class="container">
+        {% if blogs %}
+            {% for blog in blogs %}
+            <div class="blog-container">
+                <div class="blog-thumbnail">
+                    <img src="{{ blog.thumbnail.url }}">
+                </div>
+                <div class="blog-info">
+                    <h2 class="blog-title"><a href="{% url 'blog' id=blog.id %}">{{ blog.title }}</a></h2>
+                    <p class="blog-date">{{ blog.uploaded_at|date:'M. d, Y' }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <h1 class="no-posts">No Posts :(</h1>
+            <p class="no-posts-msg">I will upload soon (Maybe)</p>
+        {% endif %}
+    </section>
+{% endblock content %}

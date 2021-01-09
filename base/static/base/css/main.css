@@ -344,6 +344,90 @@ img {
     color: #4a5568;
 }
 
+/* Blog Page */
+
+#blogs {
+    padding: 1rem 0;
+    margin-bottom: 300px;
+}
+
+.blog-container {
+    display: flex;
+    margin: 5rem auto;
+    max-width: 1000px;
+}
+
+.blog-thumbnail {
+    width: 300px;
+    padding: 1rem;
+}
+
+.blog-info {
+    padding: 1rem;
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-date {
+    padding: 1rem 0;
+}
+
+#blog {
+    max-width: 1000px;
+    margin: 4rem auto;
+}
+
+.post-date {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.post-content {
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+
+.post-content * {
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+.post-content table {
+    display: block;
+}
+
+.post-content img {
+    max-width: 100% !important;
+    display: block;
+}
+
+.no-posts {
+    margin-top: 7rem;
+    height: 10vh;
+    text-align: center;
+}
+
+.no-posts-msg {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .blog-thumbnail {
+        width: 100%;
+    }
+
+    .blog-title {
+        font-size: 1.3rem;
+    }
+}
+
 /* Footer */
 
 footer {
