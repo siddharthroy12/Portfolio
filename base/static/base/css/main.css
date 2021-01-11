@@ -7,12 +7,16 @@ img {
     object-fit: cover;
 }
 
+main {
+    background-color: #FFFFFF;
+}
+
 /* Uitl */
 
 .corner {
     width: 10px;
     height: 10px;
-    background-color: white;
+    background-color: #3c3d35;
     position: absolute;
     border: 1px solid #00CB84;
 }
@@ -46,6 +50,8 @@ img {
     padding: 0.6rem;
     background-color: #00CB84;
     color: #C9F0DD;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
 }
 
 .nav-header-title {
@@ -128,6 +134,10 @@ img {
 /* Home Page */
 
 #home-front {
+    background-color: #272823;
+}
+
+#home-front > div {
     padding: 7rem 10rem;
     display: flex;
     justify-content: space-between;
@@ -137,10 +147,11 @@ img {
     width: 250px;
     height: 250px;
     border: 1px solid #00CB84;
+    box-shadow: 0px 4px 6px 2px;
 }
 
 .preview-shadow {
-    background-color: #DBDBDB;
+    background-color: #3c3d35;
     height: 200px;
     width: 350px;
     position: relative;
@@ -148,11 +159,12 @@ img {
 
 .preview {
     position: absolute;
+    color: white;
     top: 20px;
     left: 20px;
     height: 200px;
     width: 350px;
-    background-color: white;
+    background-color: #272823;
     border: 1px solid #00CB84;
     padding: 1rem;
 }
@@ -162,7 +174,7 @@ img {
 }
 
 @media (max-width:1000px) {
-    #home-front {
+    #home-front > div {
         flex-direction: column;
         gap: 50px;
         align-items: center;
@@ -179,13 +191,14 @@ img {
 /* About Me */
 
 #about-me {
-    background-color: #EDF2F7;
-    margin-bottom: 20px;
+    background-color: #3c3d35;
+    color: white;
 }
 
 .about-me-desc {
     padding: 4rem;
     padding-bottom: 0;
+    color: white;
 }
 
 .about-me-desc h4 {
@@ -199,7 +212,7 @@ img {
 }
 
 .about-me-desc p {
-    color: #4a5568;
+    color: #DBDBDB;
     font-weight: 500;
     font-size: 1.3rem;
 }
@@ -221,14 +234,15 @@ img {
 }
 
 .skill {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     padding: 2rem;
     text-align: center;
     width: 9rem;
     height: 10rem;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 2rem auto;
-    background-color: white;
+    background-color: #494a43;
+    color: white;
 }
 
 @media (max-width: 700px) {
@@ -242,6 +256,7 @@ img {
 
 #featured-projects {
     padding: 2rem 0;
+    background-color: #DBDBDB;
 }
 
 #featured-projects h4 {
@@ -267,10 +282,11 @@ img {
     width: 300px;
     margin: 2rem auto;
     min-height: 400px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .project-card .card-body {
-    background-color: #edf2f7;
+    background-color: white;
 }
 
 .project-card h6 {
@@ -291,18 +307,19 @@ img {
 /* Contact Me */
 
 #contact-me {
-    background-color: #edf2f7;
+    background-color:#272823;
     padding: 5rem 0;
 }
 
 #contact-me h4 {
     text-align: center;
     font-size: 1.875rem;
+    color: white;
 }
 
 #contact-me p {
     text-align: center;
-    color: #4a5568;
+    color: #B6B6B6;
     font-size: 1.25rem;
     margin-bottom: 20px;
 }
@@ -313,6 +330,15 @@ img {
     gap: 20px;
     max-width: 500px;
     margin: 0 auto;
+}
+.form-control {
+    background-color: #3c3d35;
+    border-color: black;
+}
+
+.form-control:focus {
+    background-color: #3c3d35;
+    border-color: black;
 }
 
 .form-full {
@@ -331,6 +357,10 @@ img {
 
 /* Projects Page */
 
+#projects {
+    padding-bottom: 30px;
+}
+
 .heading {
     text-align: center;
     padding: 5rem 0;
@@ -342,6 +372,7 @@ img {
 
 .heading .subtitle {
     color: #4a5568;
+    font-size: 1.3rem;
 }
 
 /* Blog Page */
@@ -445,11 +476,12 @@ img {
 /* Footer */
 
 footer {
-    background-color: #DBDBDB;
+    background-color: #3c3d35;
 }
 
 footer h6, footer p {
     margin: 0;
+    color: #B6B6B6;
 }
 
 footer div {
@@ -465,7 +497,7 @@ footer div {
 }
 
 .footer-left h6 {
-    color: black;
+    color: white;
     font-size: 1.4rem;
 }
 
@@ -477,7 +509,7 @@ footer div {
 
 .footer-left a {
     text-decoration: none;
-    color: gray;
+    color: #B6B6B6;
 }
 
 .social-links {
@@ -494,7 +526,7 @@ footer div {
 
 .social-links a {
     text-decoration: none;
-    color: black;
+    color: #B6B6B6;
 }
 
 @media (max-width: 770px) {
