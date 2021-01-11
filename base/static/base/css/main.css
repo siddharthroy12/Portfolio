@@ -138,9 +138,10 @@ main {
 }
 
 #home-front > div {
-    padding: 7rem 10rem;
+    padding: 7rem 0rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15rem;
 }
 
 #home-front .profile-image {
@@ -292,12 +293,14 @@ main {
 .project-card h6 {
     font-size: 0.7rem;
     color: #4a5568;
+    padding-top: 0.5rem;
 }
 
 .project-card p {
     font-size: 0.9rem !important;
     text-align: start !important;
     color: #4a5568;
+    padding-top: 0.7rem;
 }
 
 .project-card a {
