@@ -11,6 +11,10 @@ main {
     background-color: #FFFFFF;
 }
 
+.alert {
+    margin-bottom: 0 !important;
+}
+
 /* Uitl */
 
 .corner {
