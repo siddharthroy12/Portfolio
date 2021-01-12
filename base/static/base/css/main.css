@@ -178,6 +178,10 @@ main {
     margin: 20px 0;
 }
 
+.preview-shadow p {
+    color: #DBDBDB;
+}
+
 @media (max-width:1000px) {
     #home-front > div {
         flex-direction: column;
@@ -247,7 +251,7 @@ main {
     border-radius: 3px;
     margin: 2rem auto;
     background-color: #494a43;
-    color: white;
+    color: #DBDBDB;
 }
 
 @media (max-width: 700px) {
