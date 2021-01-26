@@ -8,7 +8,7 @@ img {
 }
 
 main {
-    background-color: #FFFFFF;
+    background-color: #F1f1f1;
 }
 
 .alert {
@@ -264,8 +264,8 @@ main {
 /* Featured Projects */
 
 #featured-projects {
-    padding: 2rem 0;
-    background-color: #DBDBDB;
+    padding: 4rem 0;
+    background-color: #f1f1f1;
 }
 
 #featured-projects h4 {
@@ -357,6 +357,7 @@ main {
 #contact-me .form-control:-webkit-autofill,
 #contact-me .form-control:-webkit-autofill:hover,
 #contact-me .form-control:-webkit-autofill:focus {
+    box-shadow: 0 0 0px 1000px #3c3d35 inset;
     -webkit-box-shadow: 0 0 0px 1000px #3c3d35 inset;
     -webkit-text-fill-color: white;
 }
