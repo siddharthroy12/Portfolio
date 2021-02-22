@@ -180,6 +180,7 @@ main {
 
 .preview-shadow p {
     color: #DBDBDB;
+    font-size: 1.3rem;
 }
 
 @media (max-width:1000px) {
@@ -205,7 +206,7 @@ main {
 }
 
 .about-me-desc {
-    padding: 4rem;
+    padding: 5rem;
     padding-bottom: 0;
     color: white;
 }
